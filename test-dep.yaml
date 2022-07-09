@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: test
+  labels:
+    name: test
+  namespace: k8s-demo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: test
+  strategy:
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        name: test
+    spec:
+      containers:
+      - name: go-server
+        image: techeten/go-server
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+        imagePullPolicy: Always
+

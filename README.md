@@ -17,7 +17,7 @@
 
 ## コマンド一覧
 
-`kubectl get svc -n k8s-demo`
-`kubectl get pods -n k8s-demo`
-`kubectl get svc -n argocd`
-`kubectl delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml`
+`kubectl get svc -n k8s-demo`  
+`kubectl get pods -n k8s-demo`  
+`kubectl get svc -n argocd`  
+`kubectl delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml`  

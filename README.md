@@ -1,5 +1,8 @@
 # k8s_ArgoCD
 
+## 目的
+gitopsに対する理解を深める
+
 ## 手順
 
 1. [ここ](https://github.com/argoproj/argo-cd/blob/master/docs/getting_started.md)を参考にArgoCDをインストール

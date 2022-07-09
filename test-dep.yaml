@@ -22,7 +22,7 @@ spec:
       - name: go-server
         image: techeten/go-server
         ports:
-        - containerPort: 8080
+        - containerPort: 8079
           protocol: TCP
         imagePullPolicy: Always
 

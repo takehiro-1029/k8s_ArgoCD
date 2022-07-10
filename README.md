@@ -8,7 +8,7 @@ gitopsに対する理解を深める
 1. [ここ](https://github.com/argoproj/argo-cd/blob/master/docs/getting_started.md)を参考にArgoCDをインストール
 
 2. localhost:8080でArgoCDのUI画面を開きログインする  
-※brew install argocdをインストールしないとエラー出ることもあった
+※brew install argocdをインストールしないと正しいパスワードを入力してもエラー出た
    
 3. 左上のNEW APPから作成する（下記画像を参考）
 
@@ -23,4 +23,5 @@ gitopsに対する理解を深める
 `kubectl get svc -n k8s-demo`  
 `kubectl get pods -n k8s-demo`  
 `kubectl get svc -n argocd`  
+
 `kubectl delete -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/core-install.yaml`  
